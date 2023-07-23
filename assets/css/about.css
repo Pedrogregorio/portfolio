@@ -1,6 +1,6 @@
 .about-me {
   gap: 20px;
-  height: 100%;
+  height: 80vh;
   display: grid;
   color: white;
   align-items: center;
@@ -8,14 +8,44 @@
   background-color: black;
   grid-template-areas: 'picture'
                        'name'
-                       'text';
+                       'button';
+  grid-auto-rows: min-content;
+}
+
+.about-me .buttons-about-me {
+  margin-top: 50px;
+  grid-area: button;
+  display: flex;
+  gap: 20px;
+}
+
+.about-me .buttons-about-me .button {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-me .buttons-about-me .button.linkedin {
+  color: white;
+  background-color: #0a66c2;
+}
+
+.about-me .buttons-about-me .button.github {
+  color: #000;
+  background-color: #fff;
+}
+
+.about-me .name span {
+  display: block;
+  line-height: 2;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 500;
 }
 
 .about-me .name {
   grid-area: name;
   font-weight: 600;
   overflow: hidden;
-  text-align: center;
   margin: 10px 0 0 10px;
   animation: show-name 2s;
   animation-fill-mode: backwards;
@@ -34,8 +64,8 @@
 }
 
 .about-me .images-about-me .profile {
-  width: 108px;
-  height: 187px;
+  width: 194px;
+  height: 286px;
   overflow: hidden;
   position: relative;
   background-color: var(--primary-color);
@@ -46,28 +76,36 @@
 }
 
 .about-me .images-about-me .wings img {
-  top: 72px;
-  left: -36px;
-  width: 180px;
+  top: 107px;
+  left: -37px;
+  width: 270px;
   position: absolute;
 }
 
-.about-me .text-about-me {
-  grid-area: text;
+.text-about-me {
+  padding-bottom: 10px;
   max-width: 640px;
+  margin: auto;
   text-align: justify;
+  font-style: italic;
+  color: white;
+  position: relative;
 }
 
-#text-about-one, #text-about-two {
-  margin: 20px;
-  font-size: 1.2em;
-  animation-fill-mode: backwards;
+.text-about-me::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
 }
 
-#text-about-one {
-  animation: show-about 2s;
+.text-about-me h1 {
+  font-size: 3rem;
 }
 
-#text-about-two {
-  animation: show-about 4s;
+.text-about-me p {
+  font-size: 2rem;
 }
