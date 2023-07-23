@@ -18,7 +18,6 @@
   margin: 0 auto;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 600px;
   justify-content: center;
 }
 
@@ -29,12 +28,41 @@
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
-  border: 1px solid #fff;
   border-radius: 8px;
+  flex: 1;
+  max-width: 140px;
+  min-width: 120px;
+  min-height: 120px;
 }
 
+.box-shadow-javascript {
+  box-shadow: 1px 1px 20px 0px var(--javascript-color);
+  border: 1px solid var(--javascript-color);
+}
+.box-shadow-ruby-on-rails {
+  box-shadow: 1px 1px 20px 0px var(--ruby-on-rails-color);
+  border: 1px solid var(--ruby-on-rails-color);
+}
+.box-shadow-git {
+  box-shadow: 1px 1px 20px 0px var(--git-color);
+  border: 1px solid var(--git-color);
+}
+.box-shadow-vue {
+  box-shadow: 1px 1px 20px 0px var(--vue-color);
+  border: 1px solid var(--vue-color);
+}
+.box-shadow-node {
+  box-shadow: 1px 1px 20px 0px var(--node-color);
+  border: 1px solid var(--node-color);
+}
+.box-shadow-mysql {
+  box-shadow: 1px 1px 20px 0px var(--mysql-color);
+  border: 1px solid var(--mysql-color);
+}
+
+
 .content-image-stack {
-  width: 70px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -42,7 +70,7 @@
 }
 
 .other-image-stack {
-  padding: 0px 16px;
+  padding: 6px 26px;
 }
 
 .content-image-stack img {

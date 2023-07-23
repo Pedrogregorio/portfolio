@@ -1,6 +1,6 @@
-.about-me {
+.home {
   gap: 20px;
-  height: 80vh;
+  height: calc(100vh - 70px);
   display: grid;
   color: white;
   align-items: center;
@@ -12,29 +12,35 @@
   grid-auto-rows: min-content;
 }
 
-.about-me .buttons-about-me {
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .buttons-home {
   margin-top: 50px;
   grid-area: button;
   display: flex;
   gap: 20px;
 }
 
-.about-me .buttons-about-me .button {
+.home .buttons-home .button {
   text-decoration: none;
   font-weight: bold;
 }
 
-.about-me .buttons-about-me .button.linkedin {
+.home .buttons-home .button.linkedin {
   color: white;
   background-color: #0a66c2;
 }
 
-.about-me .buttons-about-me .button.github {
+.home .buttons-home .button.github {
   color: #000;
   background-color: #fff;
 }
 
-.about-me .name span {
+.home .name span {
   display: block;
   line-height: 2;
   font-size: 2.2rem;
@@ -42,7 +48,7 @@
   font-weight: 500;
 }
 
-.about-me .name {
+.home .name {
   grid-area: name;
   font-weight: 600;
   overflow: hidden;
@@ -52,18 +58,18 @@
   font-size: var(--font-size-name);
 }
 
-.about-me .images-about-me {
+.home .images-home {
   position: relative;
   grid-area: picture;
 }
 
-.about-me .images-about-me .profile img {
+.home .images-home .profile img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.about-me .images-about-me .profile {
+.home .images-home .profile {
   width: 194px;
   height: 286px;
   overflow: hidden;
@@ -73,9 +79,24 @@
   box-shadow: 0px 0px 75px -30px rgba(255,255,255,1);
   -moz-box-shadow: 0px 0px 75px -30px rgba(255,255,255,1);
   -webkit-box-shadow: 0px 0px 75px -30px rgba(255,255,255,1);
+  animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
 }
 
-.about-me .images-about-me .wings img {
+.home .images-home .wings {
+  position: absolute;
+  animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+}
+
+@keyframes desenhoAnimacao {
+  from {
+      top:-10px;
+  }
+  to {
+      top: 20px;
+  }
+}
+
+.home .images-home .wings img {
   top: 107px;
   left: -37px;
   width: 270px;

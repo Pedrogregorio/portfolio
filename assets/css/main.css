@@ -10,6 +10,13 @@
   --secondary-color: #6c757d;
   --background-color: #000;
 
+  --javascript-color: #ecb725;
+  --ruby-on-rails-color: #cc0000;
+  --git-color: #f05033;
+  --vue-color: #41b883;
+  --node-color: #3f893b;
+  --mysql-color: #005376;
+
   /* Definindo tamanhos */
   --spacing-large: 2rem;
   --spacing-medium: 1rem;

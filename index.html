@@ -31,6 +31,16 @@
           </a>
         </li>
         <li>
+          <a href="#about-me" class="link" onclick="toggleMenu()">
+            Sobre min
+          </a>
+        </li>
+        <li>
+          <a href="#staks" class="link" onclick="toggleMenu()">
+            Habilidades
+          </a>
+        </li>
+        <li>
           <a href="#projects" class="link" onclick="toggleMenu()">
             Meus Projetos
           </a>
@@ -40,14 +50,14 @@
   </header>
 
   <main class="main-container">
-    <section class="base-section about-me">
+    <section id="home" class="base-section home">
       <h1 class="name">
         <span>Oi, eu sou</span>
         Pedro Gregorio.
         <span>Desenvolvedor Web</span>
       </h1>
 
-      <div class="images-about-me">
+      <div class="images-home">
         <div class="profile">
           <img src="./assets/foto-de-perfil.png" alt="Foto de perfil">
         </div>
@@ -57,13 +67,13 @@
         </div>
       </div>
 
-      <div class="buttons-about-me">
+      <div class="buttons-home">
         <a href="https://www.linkedin.com/in/pedro-henrique-a416a6192/" target="_blank" class="button linkedin">Linkedin</a>
         <a href="https://github.com/Pedrogregorio" target="_blank" class="button github">Github</a>
       </div>
     </section>
 
-    <section class="base-section">
+    <section id="about-me" class="base-section about-me">
       <div class="text-about-me">
         <h1>Sobre min</h1>
         <p>
@@ -77,11 +87,11 @@
       </div>
     </section>
 
-    <section class="base-section stack-level">
+    <section id="staks" class="base-section stack-level">
       <div class="container-stack-level">
         <h1>Habilidades</h1>
         <ul class="list-stack-level">
-          <li class="item-stack-level">
+          <li class="item-stack-level box-shadow-javascript">
             <div class="content-image-stack">
               <img src="assets/stack/java-script.png">
             </div>
@@ -89,7 +99,7 @@
             <span>JavaScript</span>
           </li>
 
-          <li class="item-stack-level">
+          <li class="item-stack-level box-shadow-node">
             <div class="content-image-stack">
               <img src="assets/stack/node-js.png">
             </div>
@@ -97,7 +107,7 @@
             <span>NodeJs</span>
           </li>
 
-          <li class="item-stack-level">
+          <li class="item-stack-level box-shadow-mysql">
             <div class="content-image-stack">
               <img src="assets/stack/mysql.png">
             </div>
@@ -105,16 +115,15 @@
             <span>Mysql</span>
           </li>
 
-          <li class="item-stack-level">
+          <li class="item-stack-level box-shadow-git">
             <div class="content-image-stack other-image-stack">
               <img src="assets/stack/git.png">
             </div>
 
             <span>Git</span>
-            <!-- <span class="average-score">6</span> -->
           </li>
 
-          <li class="item-stack-level">
+          <li class="item-stack-level box-shadow-vue">
             <div class="content-image-stack other-image-stack">
               <img src="assets/stack/vue.png">
             </div>
@@ -122,59 +131,15 @@
             <span>Vue</span>
           </li>
 
-          <li class="item-stack-level">
+          <li class="item-stack-level box-shadow-ruby-on-rails">
             <div class="content-image-stack">
               <img src="assets/stack/rails.png">
             </div>
 
             <span>Ruby on Rails</span>
-            <!-- <span class="average-score">6</span> -->
           </li>
         </ul>
       </div>
-
-      <!-- <div class="level-information-line">
-        <div>
-          <span>1</span>
-          <span class="line red"></span>
-        </div>
-        <div>
-          <span>2</span>
-          <span class="line red"></span>
-        </div>
-        <div>
-          <span>3</span>
-          <span class="line red"></span>
-        </div>
-        <div>
-          <span>4</span>
-          <span class="line yellow"></span>
-        </div>
-        <div>
-          <span>5</span>
-          <span class="line yellow"></span>
-        </div>
-        <div>
-          <span>6</span>
-          <span class="line yellow"></span>
-        </div>
-        <div>
-          <span>7</span>
-          <span class="line green"></span>
-        </div>
-        <div>
-          <span>8</span>
-          <span class="line green"></span>
-        </div>
-        <div>
-          <span>9</span>
-          <span class="line green"></span>
-        </div>
-        <div>
-          <span>10</span>
-          <span class="line green"></span>
-        </div>
-      </div> -->
     </section>
 
     <section id="projects">
@@ -258,5 +223,5 @@
     </section>
   </main>
 </body>
-<script src="index.js"></script>
+<script src="./assets/js/index.js"></script>
 </html>
