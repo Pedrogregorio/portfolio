@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/about.css">
   <link rel="stylesheet" href="./assets/css/stack.css">
+  <link rel="stylesheet" href="./assets/css/projects.css">
   <link rel="stylesheet" href="./assets/css/navigation.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +28,12 @@
       <ul>
         <li>
           <a href="#" class="link" onclick="toggleMenu()">
-            inicio
+            Início
           </a>
         </li>
         <li>
           <a href="#about-me" class="link" onclick="toggleMenu()">
-            Sobre min
+            Sobre mim
           </a>
         </li>
         <li>
@@ -59,11 +60,11 @@
 
       <div class="images-home">
         <div class="profile">
-          <img src="./assets/foto-de-perfil.png" alt="Foto de perfil">
+          <img src="./assets/foto-de-perfil.png" alt="Foto do Gregorio">
         </div>
 
         <div class="wings">
-          <img src="./assets/asas.svg" alt="asas">
+          <img src="./assets/asas.svg" alt="Svg de asas">
         </div>
       </div>
 
@@ -93,7 +94,7 @@
         <ul class="list-stack-level">
           <li class="item-stack-level box-shadow-javascript">
             <div class="content-image-stack">
-              <img src="assets/stack/java-script.png">
+              <img src="assets/stack/java-script.png" alt="Ícone da linguagem JavaScript">
             </div>
 
             <span>JavaScript</span>
@@ -101,7 +102,7 @@
 
           <li class="item-stack-level box-shadow-node">
             <div class="content-image-stack">
-              <img src="assets/stack/node-js.png">
+              <img src="assets/stack/node-js.png" alt="Ícone da ferramenta NodeJs">
             </div>
 
             <span>NodeJs</span>
@@ -109,7 +110,7 @@
 
           <li class="item-stack-level box-shadow-mysql">
             <div class="content-image-stack">
-              <img src="assets/stack/mysql.png">
+              <img src="assets/stack/mysql.png" alt="Ícone do gerenciador de banco de dados mysql">
             </div>
 
             <span>Mysql</span>
@@ -117,7 +118,7 @@
 
           <li class="item-stack-level box-shadow-git">
             <div class="content-image-stack other-image-stack">
-              <img src="assets/stack/git.png">
+              <img src="assets/stack/git.png" alt="Ícone da ferramenta git">
             </div>
 
             <span>Git</span>
@@ -125,7 +126,7 @@
 
           <li class="item-stack-level box-shadow-vue">
             <div class="content-image-stack other-image-stack">
-              <img src="assets/stack/vue.png">
+              <img src="assets/stack/vue.png" alt="Ícone do framework vue">
             </div>
 
             <span>Vue</span>
@@ -133,7 +134,7 @@
 
           <li class="item-stack-level box-shadow-ruby-on-rails">
             <div class="content-image-stack">
-              <img src="assets/stack/rails.png">
+              <img src="assets/stack/rails.png" alt="Ícone do framework rails">
             </div>
 
             <span>Ruby on Rails</span>
@@ -142,86 +143,149 @@
       </div>
     </section>
 
-    <section id="projects">
-      <div class="card-project bragi" data-anime>
-        <div class="text-project">
-          <div class="name-project">Bragi</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repudiandae praesentium, expedita nostrum voluptatum temporibus
-          labore perferendis itaque et quas est, incidunt dolores, iusto ullam
-          voluptate corrupti? Cum temporibus laudantium quaerat.
-        </div>
-        <div class="img-project">
-          <img class="img-project" src="assets/bragi/bragi.png">
-        </div>
-      </div>
+    <section id="projects" class="base-section projects">
+      <div class="container-projects">
+        <h1>Projetos</h1>
 
-      <div class="card-project urna" data-anime>
-        <div class="text-project">
-          <div class="name-project">Clone Urna</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repudiandae praesentium, expedita nostrum voluptatum temporibus
-          labore perferendis itaque et quas est, incidunt dolores, iusto ullam
-          voluptate corrupti? Cum temporibus laudantium quaerat.
-        </div>
-        <div class="img-project">
-          <img class="img-project" src="assets/urna/urna.png">
-        </div>
-      </div>
+        <ul>
+          <li>
+            <div class="card-project bragi">
+              <div class="img-project">
+                <img src="assets/bragi/bragi.png" alt="Imagem estilo cartoon de uma lira">
+              </div>
 
-      <div class="card-project cavi" data-anime>
-        <div class="text-project">
-          <div class="name-project">C A V I</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repudiandae praesentium, expedita nostrum voluptatum temporibus
-          labore perferendis itaque et quas est, incidunt dolores, iusto ullam
-          voluptate corrupti? Cum temporibus laudantium quaerat.
-        </div>
-        <div class="img-project">
-          <img class="img-project" src="assets/cavi.png">
-        </div>
-      </div>
+              <div>
+                <h1 class="name-project">Bragi</h1>
 
-      <div class="card-project mr-duque" data-anime>
-        <div class="text-project">
-          <div class="name-project">Mr. Duque</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repudiandae praesentium, expedita nostrum voluptatum temporibus
-          labore perferendis itaque et quas est, incidunt dolores, iusto ullam
-          voluptate corrupti? Cum temporibus laudantium quaerat.
-        </div>
-        <div class="img-project">
-          <img class="img-project" src="assets/mr-duque.png">
-        </div>
-      </div>
+                <p>
+                  Um bot do discord para reprodução de músicas.
+                </p>
+              </div>
+            </div>
 
-      <div class="card-project cleo-manicure" data-anime>
-        <div class="text-project">
-          <div class="name-project">Cleo Manicure</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repudiandae praesentium, expedita nostrum voluptatum temporibus
-          labore perferendis itaque et quas est, incidunt dolores, iusto ullam
-          voluptate corrupti? Cum temporibus laudantium quaerat.
-        </div>
-        <div class="img-project">
-          <img class="img-project" src="assets/cleo-manicure.png">
-        </div>
-      </div>
+            <div class="project-buttons bragi">
+              <a href="https://github.com/Pedrogregorio/bragi-bot" target="_blank" class="button github">Github</a>
+              <button class="button see" disabled>Ver</button>
+            </div>
+          </li>
 
-      <div class="card-project wbs-calculator" data-anime>
-        <div class="text-project">
-          <div class="name-project">Wbs Calculator</div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repudiandae praesentium, expedita nostrum voluptatum temporibus
-          labore perferendis itaque et quas est, incidunt dolores, iusto ullam
-          voluptate corrupti? Cum temporibus laudantium quaerat.
-        </div>
-        <div class="img-project">
-          <img class="img-project" src="assets/wbs-calculator.png">
-        </div>
+          <li>
+            <div class="card-project urna">
+              <div class="img-project">
+                <img class="img-project" src="assets/urna/urna.png" alt="Imagem estilo cartoon de uma urna eletrônica">
+              </div>
+
+              <div>
+                <h1 class="name-project">Clone Urna</h1>
+
+                <p>
+                  Clone de uma urna eletrônica(Front e Back).
+                </p>
+              </div>
+            </div>
+
+            <div class="project-buttons urna">
+              <a href="https://github.com/Pedrogregorio/urna-api" target="_blank" class="button github">Github(API)</a>
+              <a href="https://github.com/Pedrogregorio/urna-front" target="_blank" class="button github">Github(Front)</a>
+              <button class="button see" disabled>Ver</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="card-project cavi">
+              <div class="img-project">
+                <img class="img-project" src="assets/cavi.png" alt="Logo CAVI">
+              </div>
+
+              <div>
+                <h1 class="name-project">C A V I</h1>
+
+                <p>
+                  Sistema de compra, aluguel e venda de imóveis.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-buttons cavi">
+              <a href="https://github.com/Pedrogregorio/cavi-php" target="_blank" class="button github">Github</a>
+              <button class="button see" disabled>Ver</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="card-project mr-duque">
+              <div class="img-project">
+                <img class="img-project" src="assets/mr-duque.png" alt="Logo Mr duque">
+              </div>
+
+              <div>
+                <h1 class="name-project">Mr. Duque</h1>
+
+                <p>
+                  Sistema para controle de fluxo de trabalho de digitação de contratos.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-buttons mr-duque">
+              <a href="https://github.com/Pedrogregorio/mr-duque" target="_blank" class="button github">Github</a>
+              <button class="button see" disabled>Ver</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="card-project cleo-manicure">
+              <div class="img-project">
+                <img class="img-project" src="assets/cleo-manicure.png" alt="Logo Cleo Manicure">
+              </div>
+
+              <div>
+                <h1 class="name-project">Cleo Manicure</h1>
+
+                <p>
+                  Site para portfólio de demonstração do trabalho da manicure.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-buttons cleo-manicure">
+              <a href="https://github.com/Pedrogregorio/lp-cleo-manicure" target="_blank" class="button github">Github</a>
+              <button class="button see" disabled>Ver</button>
+            </div>
+          </li>
+
+          <li>
+            <div class="card-project wbs-calculator">
+              <div class="img-project">
+                <img class="img-project" src="assets/wbs-calculator.png" alt="Logo WBS Calculator">
+              </div>
+
+              <div>
+                <h1 class="name-project">Wbs Calculator</h1>
+
+                <p>
+                  Calculadora de fórmulas matemáticas.
+                </p>
+              </div>
+            </div>
+
+            <div class="project-buttons wbs-calculator">
+              <button class="button see" disabled>Github</button>
+              <button class="button see" disabled>Ver</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
+  <footer>
+    <div class="contact-info">
+      <h3>Informações de Contato</h3>
+      <p><img src="./assets/alfinete.svg" alt="Logo whatsapp"><strong>Endereço:</strong> Campo Grande - MS, Rua Barueri nº 32</p>
+      <p><img src="./assets/email.svg" alt="Iconde de @"><strong>Email:</strong> pedrogregoriodias675@gmail.com</p>
+      <p><img src="./assets/whatsapp.svg" alt="Logo whatsapp"><strong>Telefone:</strong> (67) 99929-4137</p>
+    </div>
+  </footer>
 </body>
 <script src="./assets/js/index.js"></script>
 </html>
