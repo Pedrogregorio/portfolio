@@ -1,4 +1,3 @@
-### Protifolio Gregorio... Em desenvolvimento
+# Meu Portfólio no GitHub :rocket:
 
-![image](https://github.com/Pedrogregorio/portfolio/assets/37714863/5681ce9f-4996-4942-9eb3-485f45f2dc81)
-![image](https://github.com/Pedrogregorio/portfolio/assets/37714863/66865d2e-7831-4ff8-9142-6a0e497f0f58)
+Olá! :wave: Seja bem-vindo ao meu repositório de portfólio. Sou Gragorio :man_technologist:, e este é o lugar onde eu compartilho alguns dos meus projetos mais interessantes e desafiantes.
