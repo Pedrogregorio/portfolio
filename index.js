@@ -13,15 +13,14 @@ window.addEventListener('scroll', () => {
 });
 
 
-const textAboutOne = `My name's Gregorio, i'm from Brasil.
-              I come from a place where we value a job well done.
-              I'm a bit of an introverted person, but when I fit in one place,
-              I can be the most amazing person you'll ever meet.`;
+const textAboutOne = `Olá a todos!`;
 
-const textAboutTwo = `When I'm programming I try to make my work run masterfully.
-                      I fell in love with programming after I met an amazing person
-                      who taught me how to write my first "Hello world!".
-                      forgive me but i'm not fluent or anything... yet!`;
+const textAboutTwo = `Meu nome é Pedro Gregorio e sou um desenvolvedor web
+                      com três anos de experiência. Ao longo desse tempo,
+                      tive o privilégio de trabalhar em diversos projetos
+                      com uma ampla variedade de clientes, o que me permitiu
+                      expandir meu conhecimento e aprimorar minhas habilidades
+                      em desenvolvimento de softwares.`;
 
 const arrayOne = textAboutOne.split("");
 const arrayTwo = textAboutTwo.split("");
@@ -31,7 +30,7 @@ function frameLooper () {
   if (arrayOne.length > 0) document.querySelector("#text-about-one").innerHTML += arrayOne.shift();
   else if (arrayTwo.length > 0) document.querySelector("#text-about-two").innerHTML += arrayTwo.shift();
   else clearTimeout(timer);
-  loopTimer = setTimeout('frameLooper()', 30);
+  loopTimer = setTimeout('frameLooper()', 10);
 }
 
 frameLooper();
