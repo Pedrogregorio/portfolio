@@ -5,7 +5,7 @@
 .container-projects {
   width: 100%;
   margin: auto;
-  max-width: 640px;
+  max-width: 810px;
   padding-top: 150px;
 }
 
@@ -20,97 +20,88 @@
 
 .container-projects ul li {
   list-style: none;
-  cursor: pointer;
-  justify-self: center;
   position: relative;
 }
 
 @media (min-width: 466px) {
-  .container-projects li:nth-child(even) {
-    justify-self: end;
-  }
-
-  .container-projects li:nth-child(odd) {
-    justify-self: start;
-  }
-
   .container-projects ul {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media (min-width: 764px) {
+  .container-projects ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.container-projects ul li > div {
+  padding: 10px;
+  display: flex;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  background-color: #000;
+  border: 1px solid var(--primary-color);
 }
 
 .container-projects h1  {
   font-size: 3rem;
 }
 
-.name-project {
+.card-project {
+  margin-bottom: 10px;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-project .project-image {
+  width: 100%;
+  height: 140px;
+}
+
+.card-project .project-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.card-project .project-name {
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
+  color: #fff;
 }
 
-.title-project {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 60px;
-  z-index: 0;
-  transform: translateX(-35%);
-  opacity: 0;
-  transition: 0.3s;
+.card-project .project-description .description{
+  display: none;
 }
 
-.card-project {
-  display: flex;
-  margin-bottom: 10px;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 10px;
-  border-radius: 8px;
-  max-width: 250px;
-  height: 270px;
-  position: relative;
-  background-color: #000;
-  border: 1px solid var(--primary-color);
-  box-shadow: 1px 1px 20px 0px var(--primary-color);
+.card-project .project-description span {
+  cursor: pointer;
 }
 
-.card-project::before {
-  border-radius: 8px 8px 0px 0px;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 140px;
-  position: absolute;
-  z-index: 1;
+.card-project .project-description .description.hidden {
+  display: none;
 }
 
 .project-buttons {
-  padding: 10px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 250px;
-  height: 270px;
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
   align-content: center;
   justify-content: center;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  border: 1px solid var(--primary-color);
-  box-shadow: 1px 1px 20px 0px var(--primary-color);
 }
 
 .project-buttons .button {
   display: block;
   font-weight: bold;
   width: 100%;
-  max-width: 200px;
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
@@ -122,101 +113,6 @@
 }
 
 .project-buttons .see {
-  color: #333333;
-  background-color: #7c7c7c;
-  cursor: no-drop;
-}
-
-.card-project h1 {
   color: #fff;
-}
-
-.card-project p {
-  color: #fff;
-}
-
-.card-project .img-project {
-  z-index: 2;
-  width: 100px;
-}
-
-.card-project .img-project img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.bragi {
-  border-color: rgba(98,248,251,1);
-  box-shadow: 1px 1px 20px 0px rgba(98,248,251,1);
-}
-
-.urna {
-  border-color: rgba(108,109,112,1);
-  box-shadow: 1px 1px 20px 0px rgba(108,109,112,1);
-}
-
-.cavi {
-  border-color: rgba(149,120,225,1);
-  box-shadow: 1px 1px 20px 0px rgba(149,120,225,1);
-}
-
-.mr-duque {
-  border-color: #fff;
-  box-shadow: 1px 1px 20px 0px #fff;
-}
-
-.cleo-manicure {
-  border-color: white;
-  box-shadow: 1px 1px 20px 0px white;
-}
-
-.wbs-calculator {
-  border-color: rgba(15,44,93,1);
-  box-shadow: 1px 1px 20px 0px rgba(15,44,93,1);
-}
-
-.bragi::before {
-  background-color: rgba(98,248,251,1);
-}
-
-.urna::before {
-  background-color: rgba(108,109,112,1);
-}
-
-.cavi::before {
-  background-color: rgba(149,120,225,1);
-}
-
-.mr-duque::before {
-  background-color: rgba(0,0,0,1);
-}
-
-.cleo-manicure::before {
-  background-color: white;
-}
-
-.wbs-calculator::before {
-  background-color: rgba(15,44,93,1);
-}
-
-.card-project,
-.project-buttons {
-  backface-visibility: hidden;
-  transition: transform 0.5s;
-}
-
-.card-project {
-  transform: rotateY(0deg);
-}
-
-.project-buttons {
-  transform: rotateY(180deg);
-}
-
-li:hover .card-project {
-  transform: rotateY(-180deg);
-}
-
-li:hover .project-buttons {
-  transform: rotateY(0deg);
+  background-color: var(--primary-color);
 }
