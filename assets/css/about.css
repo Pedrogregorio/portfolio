@@ -1,6 +1,6 @@
 .home {
   gap: 20px;
-  height: calc(100vh - 70px);
+  height: 1100%;
   display: grid;
   color: white;
   align-items: center;
@@ -13,6 +13,7 @@
 }
 
 .about-me {
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,9 +106,9 @@
 
 .text-about-me {
   padding-bottom: 10px;
-  max-width: 640px;
+  max-width: 1000px;
   margin: auto;
-  text-align: justify;
+  text-align: center;
   font-style: italic;
   color: white;
   position: relative;

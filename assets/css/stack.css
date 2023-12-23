@@ -1,16 +1,15 @@
 .stack-level {
-  height: 100vh;
   color: white;
   font-weight: bold;
   font-weight: bold;
-  padding: 50px 10px;
+  padding: 10px;
   padding-top: 150px;
   font-size: var(--font-size-small);
 }
 
 .container-stack-level {
   width: 100%;
-  max-width: 640px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -26,40 +25,84 @@
   display: flex;
   margin-bottom: 10px;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   padding: 10px;
   border-radius: 8px;
   flex: 1;
-  max-width: 140px;
-  min-width: 120px;
+  max-width: 380px;
+  min-width: 270px;
   min-height: 120px;
+}
+
+.list-stack-level .item-stack-level p {
+  text-align: justify;
+  margin-top: 20px;
 }
 
 .box-shadow-javascript {
   box-shadow: 1px 1px 20px 0px var(--javascript-color);
   border: 1px solid var(--javascript-color);
 }
+.box-shadow-javascript p span {
+  color: var(--javascript-color);
+}
+
 .box-shadow-ruby-on-rails {
   box-shadow: 1px 1px 20px 0px var(--ruby-on-rails-color);
   border: 1px solid var(--ruby-on-rails-color);
 }
+.box-shadow-ruby-on-rails p span {
+  color: var(--ruby-on-rails-color);
+}
+
 .box-shadow-git {
   box-shadow: 1px 1px 20px 0px var(--git-color);
   border: 1px solid var(--git-color);
 }
+.box-shadow-git p span {
+  color: var(--git-color);
+}
+
 .box-shadow-vue {
   box-shadow: 1px 1px 20px 0px var(--vue-color);
   border: 1px solid var(--vue-color);
 }
+.box-shadow-vue p span {
+  color: var(--vue-color);
+}
+
 .box-shadow-node {
   box-shadow: 1px 1px 20px 0px var(--node-color);
   border: 1px solid var(--node-color);
 }
+.box-shadow-node p span {
+  color: var(--node-color);
+}
+
 .box-shadow-mysql {
   box-shadow: 1px 1px 20px 0px var(--mysql-color);
   border: 1px solid var(--mysql-color);
 }
+.box-shadow-mysql p span {
+  color: var(--mysql-color);
+}
+
+.box-shadow-docker {
+  box-shadow: 1px 1px 20px 0px var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.box-shadow-docker p span {
+  color: var(--primary-color);
+}
+
+.box-shadow-aws {
+  box-shadow: 1px 1px 20px 0px var(--mysql-color);
+  border: 1px solid var(--aws-color);
+}
+.box-shadow-aws p span {
+  color: var(--aws-color);
+}
+
 
 
 .content-image-stack {
@@ -68,6 +111,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  height: 250px;
 }
 
 .other-image-stack {
