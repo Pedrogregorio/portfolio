@@ -1,22 +1,17 @@
 .home {
-  gap: 20px;
-  height: 1100%;
+  gap: 20px 100px;
+  height: 100%;
+  width: 100%;
   display: grid;
   color: white;
-  align-items: center;
-  justify-items: center;
   background-color: black;
-  grid-template-areas: 'picture'
-                       'name'
-                       'button';
+  grid-template-areas:
+      'picture abaout_me'
+      'picture button';
   grid-auto-rows: min-content;
-}
-
-.about-me {
-  padding-top: 100px;
-  display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 50px;
 }
 
 .home .buttons-home {
@@ -41,7 +36,14 @@
   background-color: #fff;
 }
 
-.home .name span {
+
+.home .about-me {
+  grid-area: abaout_me;
+  padding-top: 100px;
+  max-width: 700px;
+}
+
+.home .about-me .name span {
   display: block;
   line-height: 2;
   font-size: 2.2rem;
@@ -49,11 +51,11 @@
   font-weight: 500;
 }
 
-.home .name {
+.home .about-me .name {
   grid-area: name;
   font-weight: 600;
   overflow: hidden;
-  margin: 10px 0 0 10px;
+  margin-top: 10px;
   animation: show-name 2s;
   animation-fill-mode: backwards;
   font-size: var(--font-size-name);
@@ -104,30 +106,19 @@
   position: absolute;
 }
 
-.text-about-me {
-  padding-bottom: 10px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-  font-style: italic;
-  color: white;
-  position: relative;
-}
+@media (max-width: 670px) {
+  .home {
+    grid-template-areas:
+        'picture'
+        'abaout_me'
+        'button';
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 10px 10px;
+  }
 
-.text-about-me::after {
-  position: absolute;
-  content: '';
-  width: 50%;
-  height: 1px;
-  background-color: #fff;
-  bottom: 0;
-  left: 0;
-}
-
-.text-about-me h1 {
-  font-size: 3rem;
-}
-
-.text-about-me p {
-  font-size: 2rem;
+  .home .about-me {
+    text-align: center;
+  }
 }
