@@ -15,6 +15,7 @@
   padding-bottom: 20px;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .container-projects ul::-webkit-scrollbar {
@@ -39,20 +40,22 @@
 .container-projects ul li {
   list-style: none;
   position: relative;
+  flex: 1;
+  max-width: 400px;
+  min-width: 247px;
 }
 
 .container-projects ul li > div {
   padding: 10px;
   display: flex;
   border-radius: 8px;
-  width: 240px;
   height: 100%;
-  background-color: #000;
+  background-color: var(--background-color);
   border: 1px solid var(--primary-color);
 }
 
 .container-projects h1  {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .card-project {
@@ -79,7 +82,7 @@
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: bold;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .card-project .project-description .description{
@@ -113,11 +116,11 @@
 }
 
 .project-buttons .github {
-  color: #000;
-  background-color: #fff;
+  color: var(--background-color);
+  background-color: var(--white-color);
 }
 
 .project-buttons .see {
-  color: #fff;
+  color: var(--white-color);
   background-color: var(--primary-color);
 }

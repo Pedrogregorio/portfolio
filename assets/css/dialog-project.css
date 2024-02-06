@@ -19,7 +19,7 @@
   right: 30px;
   padding: 20px;
   border-radius: 8px;
-  background-color: #000;
+  background-color: var(--background-color);
   border: 1px solid var(--primary-color);
   align-items: center;
   justify-items: center;
@@ -51,14 +51,14 @@
 
 .base-dialog[open] .content-dialog {
   grid-area: description;
-  color: #fff;
+  color: var(--white-color);
   text-align: justify;
 }
 
 .base-dialog[open] button {
-  background-color: #cc0000;
-  color: white;
-  border: 2px solid #cc0000;
+  background-color: var(--danger-color);
+  color: var(--white-color);
+  border: 2px solid var(--danger-color);
   padding: 8px 20px;
   grid-area: button;
   transition-duration: 500ms;

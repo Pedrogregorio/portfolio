@@ -9,6 +9,10 @@
   --primary-color: #007bff;
   --secondary-color: #6c757d;
   --background-color: #000;
+  --white-color: #fff;
+  --danger-color:  #cc0000;
+
+  --blue-color: #0a66c2;
 
   --javascript-color: #ecb725;
   --ruby-on-rails-color: #cc0000;
@@ -17,6 +21,7 @@
   --node-color: #3f893b;
   --aws-color: #FF9900;
   --mysql-color: #005376;
+  --php-color: #777BB3;
 
   /* Definindo tamanhos */
   --spacing-large: 2rem;
@@ -30,6 +35,11 @@
 
   --font-size-name: 3rem;
 }
+
+/* :root {
+  --background-color: #fff;
+  --white-color: #000;
+} */
 
 body {
   padding-top: 150px;
@@ -65,7 +75,7 @@ p {
 
 .button {
   border: none;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
   border-radius: 4px;
   font-size: var(--font-size-medium);
@@ -83,13 +93,12 @@ html {
 .main-container {
   width: 100%;
   margin: 0 auto;
-  background-color: var(--primary-color);
 }
 
 .base-section {
   width: 100%;
   padding: 10px;
-  background-color: #000;
+  background-color: var(--background-color);
 }
 
 /* Sobre mim */
@@ -108,9 +117,9 @@ html {
 footer {
   margin-top: 60px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white-color);
   padding: 20px;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--white-color);
 }
 
 .contact-info {
