@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Heebo", sans-serif;
+
+  @media (max-width: 688px) {
+    font-size: 50%;
+  }
+}
+
+
+:root {
+  --primary-color: #FF6464;
+  --secondary-color: #00A8CC;
+  --dark-color: #21243D;
+  --ligth-color: #8695A4;
+
+  --secondary-background-color: #EDF7FA;
+
+  --text-color: #000;
+  --white-color: #fff;
+
+  --javascript-color: #ecb725;
+  --ruby-on-rails-color: #cc0000;
+  --git-color: #f05033;
+  --vue-color: #41b883;
+  --node-color: #3f893b;
+  --aws-color: #FF9900;
+  --mysql-color: #005376;
+  --php-color: #777BB3;
+  --html-color: #ff5733;
+  --css-color: #264de4;
+
+  /* breackpoint */
+  --sm: 480px;
+  --md: 1074px;
+  --lg: 1440px;
+}
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+p, span {
+  font-size: 1.6rem;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.base-section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+
+  .base-limitator {
+    width: 100%;
+    max-width: 88rem;
+  }
+}

@@ -1,367 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Pedro Gregorio">
-  <meta name="description" content="Meu site de portfólio">
-  <meta name="keywords" content="sites, web, desenvolvimento">
-  <meta http-equiv="content-language" content="pt-br" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta name="copyright" content="© 2023 Gregorio" />
-  <meta name="robots" content="index,follow">
-  <meta name="rating" content="general" />
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Gregorio">
+    <meta name="description" content="Meu site de portfólio">
+    <meta name="keywords" content="sites, web, desenvolvimento">
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="copyright" content="© 2023 Gregorio" />
+    <meta name="robots" content="index,follow">
+    <meta name="rating" content="general" />
 
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/about.css">
-  <link rel="stylesheet" href="./assets/css/stack.css">
-  <link rel="stylesheet" href="./assets/css/projects.css">
-  <link rel="stylesheet" href="./assets/css/navigation.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="./assets/css/dialog-project.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/about-me.css">
+    <link rel="stylesheet" href="./css/jobs.css">
+    <link rel="stylesheet" href="./css/projects.css">
 
-  <title> Portfolio | Pedro Gregorio </title>
-</head>
-<body>
-  <header>
-    <button class="menu-icon" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </button>
-
+    <title> Portfolio | Pedro Gregorio </title>
+  </head>
+  <body>
     <nav class="navigation">
-      <ul>
-        <li>
-          <a href="#" class="link" onclick="toggleMenu()">
-            Sobre mim
-          </a>
+      <button class="toggle-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="list-items">
+        <li class="item">
+          <a href="#" class="link">Trabalhos</a>
         </li>
-        <li>
-          <a href="#staks" class="link" onclick="toggleMenu()">
-            Habilidades
-          </a>
+        <li class="item">
+          <a href="#" class="link">Projetos</a>
         </li>
-        <li>
-          <a href="#projects" class="link" onclick="toggleMenu()">
-            Meus Projetos
-          </a>
+        <li class="item">
+          <a href="#" class="link">Contato</a>
         </li>
       </ul>
     </nav>
-  </header>
 
-  <main class="main-container">
-    <section id="home" class="base-section home">
+    <main class="container">
+      <section class="base-section about-me">
+        <div class="base-limitator">
+          <div class="text-container">
+            <h1>Oi, sou Pedro Gregorio, Desenvolvedor Web</h1>
 
-      <div class="images-home">
-        <div class="profile">
-          <img src="./assets/foto-de-perfil.png" alt="Foto do Gregorio">
+            <p>
+              Há cinco anos atuo como desenvolvedor web, participando de
+              diversos projetos e colaborando com clientes de diferentes setores.
+              Essa experiência tem sido essencial para aprimorar minhas habilidades
+              e expandir meu conhecimento no desenvolvimento de software.
+            </p>
+
+            <a class="resume-download" href="curriculo_pedro_gregorio_dias_da_silva.pdf" download>Curriculo</a>
+          </div>
+
+          <div class="image-container">
+            <img class="image" src="/images/foto-de-perfil.png" alt="Foto de perfil Pedro Gregorio">
+            <div class="ellipse"></div>
+          </div>
         </div>
+      </section>
 
-        <div class="wings">
-          <img src="./assets/asas.svg" alt="Svg de asas">
+      <section class="base-section jobs">
+        <div class="base-limitator">
+          <h3 class="title">Contratos de Trabalho</h3>
+
+          <div class="jobs-container">
+            <article class="job-card">
+              <h3 class="job-title">Jera software LTDA</h3>
+
+              <div class="job-info">
+                <time class="text link" datetime="2021-03-10">03/2021</time>
+                <span class="text"> | </span>
+                <span class="text link">Atual</span>
+                <div class="text">Desenvolvedor Full-stack</div>
+              </div>
+
+              <p class="job-description">
+                Desenvolvimento e manutenção de aplicações web, atuando no frontend e backend.
+                Tecnologias: Ruby on Rails, NodeJs, VueJs e TypeScript
+                Implementação de novas funcionalidades, otimização de código e integração entre
+                sistemas.
+                Participação em práticas de DevOps, incluindo CI/CD, Docker, Kubernetes e AWS para
+                automação de deploys e gerenciamento de infraestrutura
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="about-me">
-        <h2 class="name">
-          <span>Oi, eu sou</span>
-          Pedro Gregorio.
-          <span>Desenvolvedor Web</span>
-        </h2>
+      <section class="base-section projects">
+        <div class="base-limitator">
+          <h3 class="title">Projetos</h3>
 
-        <p class="text-about-me">
-          Meu nome é Pedro Gregorio, e sou um desenvolvedor web com de cinco anos de atuação no campo.
-          Durante essa jornada, tive a oportunidade de colaborar em uma persidade de projetos, trabalhando
-          com clientes de diferentes segmentos. Essa experiência enriquecedora tem sido fundamental para ampliar
-          meu conhecimento e aperfeiçoar minhas habilidades no desenvolvimento de softwares.
-        </p>
-      </div>
+          <div class="projects-container">
+            <article class="project-card">
+              <img class="project-image" src="images/projects/cavi.png" alt="CAVI - Compra Aluguel e Venda de Imoveis">
+              <div class="project-info">
+                <h2 class="project-title">CAVI - Compra Aluguel e Venda de Imoveis</h2>
 
-      <div class="buttons-home">
-        <a href="https://www.linkedin.com/in/pedro-henrique-a416a6192/" target="_blank" class="button linkedin">Linkedin</a>
-        <a href="https://github.com/Pedrogregorio" target="_blank" class="button github">Github</a>
-        <a href="/assets/curriculo_pedro_gregorio_dias_da_silva.pdf" class="button curriculo" download>Curriculo</a>
-      </div>
-    </section>
+                <div class="project-tools">
+                  <span class="stack-chip php">PHP</span>
+                  <span class="stack-chip html">HTML</span>
+                  <span class="stack-chip javascript">JS</span>
+                  <span class="stack-chip css">CSS</span>
+                  <span class="stack-chip mysql">MYSQL</span>
+                </div>
 
-    <section id="staks" class="base-section stack-level">
-      <div class="container-stack-level">
-        <h1>Habilidades/Interesses</h1>
-        <ul class="list-stack-level">
-          <li class="item-stack-level box-shadow-javascript">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/java-script.png" alt="Ícone da linguagem JavaScript">
-            </div>
-
-            <p>
-              <span>JavaScript</span> é uma linguagem de programação originalmente voltada para a web,
-              mas hoje em dia é muito versátil, podendo ser utilizada em Desktop, Mobile e diversas
-              outras áreas da tecnologia. Minha atuação com JavaScript está focada no desenvolvimento front-end e back-end.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-node">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/node-js.png" alt="Ícone da ferramenta NodeJs">
-            </div>
-
-            <p>
-              <span>Node.js</span> é uma ferramenta poderosa que utiliza o motor V8 do Google para interpretar
-              o JavaScript em código de máquina, facilitando seu uso em diversas plataformas.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-mysql">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/mysql.png" alt="Ícone do gerenciador de banco de dados mysql">
-            </div>
-
-            <p>
-              <span>MySQL</span> é um gerenciador de banco de dados que utiliza SQL como linguagem de
-              consulta aos dados. Baseado no modelo de entidade e relacionamento para a criação e organização dos dados,
-              possibilita a construção de um banco que possui tabelas inter-relacionadas.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-git">
-            <div class="content-image-stack other-image-stack">
-              <img src="assets/images/stack/git.png" alt="Ícone da ferramenta git">
-            </div>
-
-            <p>
-              <span>Git</span> é uma ferramenta utilizada para versionamento de código, auxiliando na organização de projetos
-              com múltiplos desenvolvedores trabalhando em funcionalidades e resolução de bugs distintos.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-vue">
-            <div class="content-image-stack other-image-stack">
-              <img src="assets/images/stack/vue.png" alt="Ícone do framework vue">
-            </div>
-
-            <p>
-              <span>Vue.js</span> é um framework JavaScript que facilita a criação de sistemas
-              front-end para a web, permitindo a utilização de bibliotecas adicionais.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-ruby-on-rails">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/rails.png" alt="Ícone do framework rails">
-            </div>
-
-            <p>
-              <span>Ruby on Rails</span> é um framework livre, multiplataforma, que permite
-              a criação de aplicações com base em estruturas pré-definidas (de arquivos e pastas).
-              O Ruby on Rails é basicamente uma coleção de bibliotecas escritas na Linguagem de Programação Ruby.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-docker">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/docker.png" alt="Ícone do framework rails">
-            </div>
-
-            <p>
-              <span>Docker</span> é uma plataforma que simplifica a criação e o gerenciamento de
-              ambientes de desenvolvimento. Facilita a criação de sistemas front-end para a web,
-              utilizando bibliotecas adicionais.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-aws">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/aws.png" alt="Ícone do framework rails">
-            </div>
-
-            <p>
-              <span>AWS</span> (Amazon Web Services) é uma plataforma de serviços em nuvem
-              que oferece uma variedade de ferramentas para o desenvolvimento e hospedagem de
-              sistemas.
-            </p>
-          </li>
-
-          <li class="item-stack-level box-shadow-php">
-            <div class="content-image-stack">
-              <img src="assets/images/stack/php.png" alt="Ícone do framework rails">
-            </div>
-
-            <p>
-              <span>PHP</span> PHP é uma linguagem interpretada livre,
-              usada originalmente apenas para o desenvolvimento de aplicações
-              presentes e atuantes no lado do servidor, capazes de gerar conteúdo
-              dinâmico na Web
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects" class="base-section projects">
-      <div class="container-projects">
-        <h1>Projetos</h1>
-
-        <ul>
-          <li>
-            <div class="card-project bragi">
-              <div class="project-image">
-                <img src="assets/images/projects/bragi.png" alt="Imagem estilo cartoon de uma lira">
-              </div>
-
-              <div class="project-description">
-                <p class="description">
-                  Um bot do Discord desenvolvido em JavaScript
-                  que oferece uma experiência de reprodução de
-                  músicas a partir do YouTube e do Spotify. O
-                  bot permite que os usuários pesquisem e toquem
-                  suas músicas favoritas diretamente nos canais
-                  de voz do Discord, proporcionando momentos
-                  de entretenimento e diversão para os membros do servidor.
+                <p class="project-description">
+                  CAVI foi o projeto do meu TCC no curso técnico em Informática.
+                  Foi minha primeira experiência desenvolvendo um software do início ao fim,
+                  desde o levantamento de requisitos até a implementação,
+                  utilizando a metodologia Scrum e desenvolvimento web. A plataforma
+                  permite que usuários publiquem imóveis para compra e venda de forma
+                  simples e eficiente.
                 </p>
               </div>
+            </article>
 
-              <div class="project-buttons bragi">
-                <a href="https://github.com/Pedrogregorio/bragi-bot" target="_blank" class="button github">Github</a>
-                <button class="button see open-dialog">Ver descrição</button>
-              </div>
-            </div>
-          </li>
+            <article class="project-card">
+              <img class="project-image" src="images/projects/bragi.png" alt="Bragi - Bot de musica para o discord">
+              <div class="project-info">
+                <h2 class="project-title">Bragi</h2>
 
-          <li>
-            <div class="card-project urna">
-              <div class="project-image">
-                <img src="assets/images/projects/clone-urna.png" alt="Imagem estilo cartoon de uma urna eletrônica">
-              </div>
+                <div class="project-tools">
+                  <span class="stack-chip javascript">JS</span>
+                </div>
 
-              <div class="project-description">
-                <p class="description">
-                  O projeto "Urna Eletrônica - Clone Interativo" é uma
-                  recriação virtual do sistema de votação utilizado em
-                  eleições. Desenvolvido com as tecnologias: VueJs,
-                  Ruby on Rails e Mysql. O projeto tem como objetivo
-                  simular uma experiência realista de
-                  votação, proporcionando aos usuários uma oportunidade
-                  única de interagir com a urna eletrônica em um ambiente
-                  virtual.
+                <p class="project-description">
+                  A ideia do projeto é desenvolver um bot de música para o Discord. O nome escolhido, Bragi,
+                  faz referência à mitologia nórdica, onde ele é conhecido como o deus da música e da poesia.
+                  O nome foi escolhido para manter a identidade viking da empresa. O projeto serviu para entender
+                  melhor como funciona o streaming de dados
                 </p>
               </div>
+            </article>
 
-              <div class="project-buttons urna">
-                <a href="https://github.com/Pedrogregorio/urna-api" target="_blank" class="button github">Github(API)</a>
-                <a href="https://github.com/Pedrogregorio/urna-front" target="_blank" class="button github">Github(Front)</a>
-                <button class="button see open-dialog">Ver descrição</button>
-              </div>
-            </div>
-          </li>
+            <article class="project-card">
+              <img class="project-image" src="images/projects/clone-urna.png" alt="Clone da urna eletronica">
+              <div class="project-info">
+                <h2 class="project-title">Clone da Urna eletronica</h2>
 
-          <li>
-            <div class="card-project cavi">
-              <div class="project-image">
-                <img src="assets/images/projects/cavi.png" alt="Logo CAVI">
-              </div>
+                <div class="project-tools">
+                  <span class="stack-chip vue">VUE</span>
+                  <span class="stack-chip javascript">JS</span>
+                  <span class="stack-chip ruby-on-rails">Ruby on Rails</span>
+                  <span class="stack-chip mysql">MYSQL</span>
+                </div>
 
-              <div class="project-description">
-                <p class="description">
-                  O projeto "CAVI - Compra, Aluguel e Venda de Imóveis"
-                  é uma plataforma online voltada para facilitar o processo
-                  de compra, aluguel e venda de imóveis. Neste ambiente
-                  virtual, corretores imobiliários têm a possibilidade de
-                  cadastrar e gerenciar seus imóveis, inserindo informações
-                  detalhadas, imagens e descrições para oferecer aos
-                  potenciais compradores e locatários. Por outro lado,
-                  os usuários têm acesso a uma área de visualização dos
-                  imóveis disponíveis, podendo explorar diversas opções
-                  e entrar em contato diretamente com os corretores para
-                  obter mais detalhes ou agendar visitas.
+                <p class="project-description">
+                  Um projeto que me permite trabalhar de forma isolada com o Back-end e o Front-end, seguindo a arquitetura client-side e server-side.
                 </p>
               </div>
-
-              <div class="project-buttons cavi">
-                <a href="https://github.com/Pedrogregorio/cavi-php" target="_blank" class="button github">Github</a>
-                <button class="button see open-dialog">Ver descrição</button>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="card-project mr-duque">
-              <div class="project-image">
-                <img src="assets/images/projects/mr-duque.png" alt="Logo Mr duque">
-              </div>
-
-              <div class="project-description">
-                <p class="description">
-                  O projeto "Mr. Duque" é uma solução eficiente e organizada
-                  para o gerenciamento de processos contratuais em uma empresa
-                  que faz emprestimo consignado. Através de uma esteira virtual,
-                  os funcionarios podem acompanhar cada etapa do ciclo de
-                  vida de um contrato, desde sua criação até a finalização.
-                  A plataforma oferece uma visão abrangente dos contratos em andamento,
-                  atribuindo status específicos, como "Digitando", "Digitalizando",
-                  "Aguardando Assinatura", entre outros, para facilitar o controle
-                  e monitoramento de cada documento.
-                </p>
-              </div>
-
-              <div class="project-buttons mr-duque">
-                <a href="https://github.com/Pedrogregorio/mr-duque" target="_blank" class="button github">Github</a>
-                <button class="button see open-dialog">Ver descrição</button>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="card-project cleo-manicure">
-              <div class="project-image">
-                <img src="assets/images/projects/cleo-manicure.png" alt="Logo Cleo Manicure">
-              </div>
-
-              <div class="project-description">
-                <p class="description">
-                  é uma vitrine online cuidadosamente projetada para
-                  exibir o talento e a habilidade de uma talentosa
-                  manicure. Com uma combinação perfeita de design
-                  elegante e recursos interativos, o site oferece
-                  aos visitantes uma experiência envolvente e
-                  inspiradora, mergulhando-os no mundo criativo
-                  e artístico da profissional de beleza.
-                </p>
-              </div>
-
-              <div class="project-buttons cleo-manicure">
-                <a href="https://github.com/Pedrogregorio/lp-cleo-manicure" target="_blank" class="button github">Github</a>
-                <button class="button see open-dialog">Ver descrição</button>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <dialog class="base-dialog">
-          <div class="image"></div>
-
-          <p class="content-dialog"></p>
-
-          <button class="close-dialog"> Fechar </button>
-        </dialog>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="contact-info">
-      <h3>Informações de Contato</h3>
-      <p><img src="./assets/alfinete.svg" alt="Logo whatsapp"><strong>Endereço:</strong> Campo Grande - MS</p>
-      <p><img src="./assets/email.svg" alt="Iconde de @"><strong>Email:</strong> pedrogregoriodias675@gmail.com</p>
-      <p><img src="./assets/whatsapp.svg" alt="Logo whatsapp"><strong>Telefone:</strong> (67) 99929-4137</p>
-    </div>
-
-    <div class="copyright"> © 2023 Gregorio </div>
-  </footer>
-</body>
-<script src="./assets/js/index.js"></script>
-<script src="./assets/js/dialogProjects.js"></script>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
