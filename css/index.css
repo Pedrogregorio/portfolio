@@ -57,7 +57,11 @@ p, span {
 }
 
 .container {
-  margin-top: 5rem;
+  margin-top: 8rem;
+
+  @media (max-width: 1074px) {
+    margin-top: 10rem;
+  }
 }
 
 .base-section {

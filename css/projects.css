@@ -54,6 +54,7 @@
           .project-tools {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             gap: 10px;
 
             .stack-chip {
@@ -125,5 +126,24 @@
   }
 }
 
-@media (max-width: 1074px) {
+@media (max-width: 820px) {
+  .projects {
+    .base-limitator {
+      .projects-container {
+
+        .project-card {
+          flex-direction: column;
+
+          .project-image {
+            object-fit: contain;
+            max-width: none;
+          }
+
+          &::after {
+            top: 105%;
+          }
+        }
+      }
+    }
+  }
 }

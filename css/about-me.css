@@ -64,6 +64,8 @@
 
 @media (max-width: 1074px) {
   .about-me {
+    height: 80vh;
+
     .base-limitator {
       display: flex;
       flex-direction: column-reverse;
