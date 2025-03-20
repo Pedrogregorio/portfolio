@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  .contact {
+    .copyright {
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: normal;
+      margin-top: 2rem;
+    }
+    .info {
+      display: grid;
+      gap: 10px 20px;
+      grid-template-areas:
+        'github linkedin email tel';
+
+      .link {
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: var(--dark-color);
+        font-style: normal;
+
+        &.linkedin-link {
+          grid-area: linkedin;
+        }
+
+        &.github-link {
+          grid-area: github;
+          text-align: right;
+        }
+
+        &.email-link {
+          grid-area: email;
+        }
+
+        &.tel-link {
+          grid-area: tel;
+        }
+
+        .social-media-icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1074px) {
+}
