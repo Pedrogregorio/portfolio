@@ -1,5 +1,6 @@
 .about-me {
   height: 70vh;
+  overflow: hidden;
 
   .base-limitator {
     width: 100%;
@@ -13,6 +14,10 @@
       display: flex;
       flex-direction: column;
       gap: 4rem;
+      opacity: 0;
+      transform: translateX(-100px);
+      animation: slideInLeft 1s ease forwards;
+      animation-delay: 0.5s;
 
       .resume-download {
         width: 100%;
@@ -28,6 +33,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
 
@@ -35,6 +45,10 @@
       width: 50rem;
       height: 30rem;
       position: relative;
+      opacity: 0;
+      transform: translateX(100px);
+      animation: slideInRight 1s ease forwards;
+      animation-delay: 0.5s;
 
       .image {
         top: 0;
@@ -62,6 +76,28 @@
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1074px) {
   .about-me {
     height: 80vh;
@@ -74,12 +110,38 @@
       .text-container {
         align-items: center;
         text-align: center;
+        animation: slideInUp 1s ease forwards;
+        animation-delay: 0.5s;
       }
 
       .image-container {
         width: 30rem;
         margin: auto;
+        animation: slideInDown 1s ease forwards;
+        animation-delay: 0.5s;
       }
     }
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

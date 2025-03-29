@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pedro Gregorio">
-    <meta name="description" content="Meu site de portfólio">
-    <meta name="keywords" content="sites, web, desenvolvimento">
+    <meta name="description" content="Portfólio de Pedro Gregorio - Desenvolvedor Web Full-stack com 5 anos de experiência em Ruby on Rails, NodeJS, VueJS e TypeScript">
+    <meta name="keywords" content="desenvolvedor web, full-stack, ruby on rails, nodejs, vuejs, typescript, portfolio, desenvolvimento web">
     <meta http-equiv="content-language" content="pt-br" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="copyright" content="© 2023 Gregorio" />
+    <meta name="copyright" content="© 2024 Pedro Gregorio" />
     <meta name="robots" content="index,follow">
     <meta name="rating" content="general" />
+    <meta property="og:title" content="Pedro Gregorio - Desenvolvedor Web Full-stack">
+    <meta property="og:description" content="Portfólio de Pedro Gregorio - Desenvolvedor Web Full-stack com 5 anos de experiência">
+    <meta property="og:image" content="/images/foto-de-perfil.png">
+    <meta property="og:url" content="https://gregorio.dev.br">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedro Gregorio - Desenvolvedor Web Full-stack">
+    <meta name="twitter:description" content="Portfólio de Pedro Gregorio - Desenvolvedor Web Full-stack com 5 anos de experiência">
+    <meta name="twitter:image" content="/images/foto-de-perfil.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,36 +29,43 @@
     <link rel="stylesheet" href="./css/about-me.css">
     <link rel="stylesheet" href="./css/jobs.css">
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/academic.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/skills.css">
 
-    <title> Portfolio | Pedro Gregorio </title>
+    <title>Pedro Gregorio | Desenvolvedor Web Full-stack</title>
   </head>
   <body>
-    <nav class="navigation">
-      <button class="toggle-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+    <header>
+      <nav class="navigation" aria-label="Menu principal">
+        <button class="toggle-menu" aria-label="Abrir menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
 
-      <ul class="list-items">
-        <li class="item">
-          <a href="#jobs" class="link">Trabalhos</a>
-        </li>
-        <li class="item">
-          <a href="#projects" class="link">Projetos</a>
-        </li>
-        <li class="item">
-          <a href="#contact" class="link">Contato</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="list-items">
+          <li class="item">
+            <a href="#skills" class="link">Habilidades</a>
+          </li>
+          <li class="item">
+            <a href="#jobs" class="link">Trabalhos</a>
+          </li>
+          <li class="item">
+            <a href="#projects" class="link">Projetos</a>
+          </li>
+          <li class="item">
+            <a href="#contact" class="link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="container">
-      <section class="base-section about-me">
+      <section class="base-section about-me" aria-labelledby="about-me-title">
         <div class="base-limitator">
           <div class="text-container">
-            <h1>Oi, sou Pedro Gregorio, Desenvolvedor Web</h1>
+            <h1 id="about-me-title">Oi, sou Pedro Gregorio, Desenvolvedor Web</h1>
 
             <p>
               Há cinco anos atuo como desenvolvedor web, participando de
@@ -59,19 +74,156 @@
               e expandir meu conhecimento no desenvolvimento de software.
             </p>
 
-            <a class="resume-download" href="curriculo_pedro_gregorio_dias_da_silva.pdf" download>Curriculo</a>
+            <a class="resume-download" href="curriculo_pedro_gregorio_dias_da_silva.pdf" download aria-label="Baixar currículo">Currículo</a>
           </div>
 
           <div class="image-container">
-            <img class="image" src="/images/foto-de-perfil.png" alt="Foto de perfil Pedro Gregorio">
+            <img class="image" src="/images/foto-de-perfil.png" alt="Foto de perfil Pedro Gregorio" width="250" height="250">
             <div class="ellipse"></div>
           </div>
         </div>
       </section>
 
-      <section id="jobs" class="base-section jobs">
+      <section id="skills" class="base-section skills" aria-labelledby="skills-title">
         <div class="base-limitator">
-          <h3 class="title">Contratos de Trabalho</h3>
+          <h2 id="skills-title" class="title">Habilidades</h2>
+
+          <div class="skills-container">
+            <div class="skills-category">
+              <h3 class="category-title">Frontend</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <img src="./icons/html5.svg" alt="HTML5" width="40" height="40">
+                  <span>HTML5</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/css3.svg" alt="CSS3" width="40" height="40">
+                  <span>CSS3</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/javascript.svg" alt="JavaScript" width="40" height="40">
+                  <span>JavaScript</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/vuejs.svg" alt="Vue.js" width="40" height="40">
+                  <span>Vue.js</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/typescript.svg" alt="TypeScript" width="40" height="40">
+                  <span>TypeScript</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3 class="category-title">Backend</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <img src="./icons/ruby.svg" alt="Ruby" width="40" height="40">
+                  <span>Ruby</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/rails.svg" alt="Ruby on Rails" width="40" height="40">
+                  <span>Ruby on Rails</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/php.svg" alt="PHP" width="40" height="40">
+                  <span>PHP</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3 class="category-title">DevOps & Infraestrutura</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <img src="./icons/docker.svg" alt="Docker" width="40" height="40">
+                  <span>Docker</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/kubernetes.svg" alt="Kubernetes" width="40" height="40">
+                  <span>Kubernetes</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 10%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/aws.svg" alt="AWS" width="40" height="40">
+                  <span>AWS</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/git.svg" alt="Git" width="40" height="40">
+                  <span>Git</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 90%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3 class="category-title">Banco de Dados</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <img src="./icons/mysql.svg" alt="MySQL" width="40" height="40">
+                  <span>MySQL</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/mongodb.svg" alt="MongoDB" width="40" height="40">
+                  <span>Mongo</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 20%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <img src="./icons/redis.svg" alt="Redis" width="40" height="40">
+                  <span>Redis</span>
+                  <div class="skill-level">
+                    <div class="progress" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="jobs" class="base-section jobs" aria-labelledby="jobs-title">
+        <div class="base-limitator">
+          <h2 id="jobs-title" class="title">Contratos de Trabalho</h2>
 
           <div class="jobs-container">
             <article class="job-card">
@@ -97,16 +249,44 @@
         </div>
       </section>
 
-      <section id="projects" class="base-section projects">
+      <section id="academic" class="base-section academic" aria-labelledby="academic-title">
         <div class="base-limitator">
-          <h3 class="title">Projetos</h3>
+          <h2 id="academic-title" class="title">Graduações e Cursos</h2>
+
+          <div class="academics-container">
+            <article class="academic-card">
+              <h3 class="academic-title">Análise de Sistemas - ESTACIO</h3>
+
+              <div class="academic-info">
+                <time class="text link" datetime="2020-07-01">07/2020</time>
+                <span class="text"> | </span>
+                <time class="text link" datetime="2023-02-01">02/2023</time>
+              </div>
+
+              <p class="academic-description">
+                Graduação em Análise de Sistemas pela Estácio, onde desenvolvi uma base sólida em
+                programação, arquitetura de software e metodologias de desenvolvimento. Durante o curso,
+                tive contato com diversas tecnologias e frameworks modernos, além de participar de
+                projetos práticos que me ajudaram a desenvolver habilidades essenciais para o mercado
+                de trabalho. O curso me proporcionou uma visão abrangente sobre o ciclo de vida do
+                desenvolvimento de software, desde a análise de requisitos até a implementação e
+                manutenção de sistemas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="base-section projects" aria-labelledby="projects-title">
+        <div class="base-limitator">
+          <h2 id="projects-title" class="title">Projetos</h2>
 
           <div class="projects-container">
-            <a class="project-link" target="_blank" href="https://github.com/Pedrogregorio/cavi-php">
+            <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Pedrogregorio/cavi-php">
               <article class="project-card">
-                <img class="project-image" src="images/projects/cavi.png" alt="CAVI - Compra Aluguel e Venda de Imoveis">
+                <img class="project-image" src="images/projects/cavi.png" alt="CAVI - Compra Aluguel e Venda de Imoveis" width="280" height="160">
                 <div class="project-info">
-                  <h2 class="project-title">CAVI - Compra Aluguel e Venda de Imoveis</h2>
+                  <h3 class="project-title">CAVI - Compra Aluguel e Venda de Imoveis</h3>
 
                   <div class="project-tools">
                     <span class="stack-chip php">PHP</span>
@@ -128,11 +308,11 @@
               </article>
             </a>
 
-            <a class="project-link" target="_blank" href="https://github.com/Pedrogregorio/bragi-bot">
+            <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Pedrogregorio/bragi-bot">
               <article class="project-card">
-                <img class="project-image" src="images/projects/bragi.png" alt="Bragi - Bot de musica para o discord">
+                <img class="project-image" src="images/projects/bragi.png" alt="Bragi - Bot de musica para o discord" width="280" height="160">
                 <div class="project-info">
-                  <h2 class="project-title">Bragi</h2>
+                  <h3 class="project-title">Bragi</h3>
 
                   <div class="project-tools">
                     <span class="stack-chip javascript">JS</span>
@@ -148,11 +328,11 @@
               </article>
             </a>
 
-            <a class="project-link" target="_blank" href="https://github.com/Pedrogregorio?tab=repositories&q=urna&type=&language=&sort=">
+            <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Pedrogregorio?tab=repositories&q=urna&type=&language=&sort=">
               <article class="project-card">
-                <img class="project-image" src="images/projects/clone-urna.png" alt="Clone da urna eletronica">
+                <img class="project-image" src="images/projects/clone-urna.png" alt="Clone da urna eletronica" width="280" height="160">
                 <div class="project-info">
-                  <h2 class="project-title">Clone da Urna eletronica</h2>
+                  <h3 class="project-title">Clone da Urna eletronica</h3>
 
                   <div class="project-tools">
                     <span class="stack-chip vue">VUE</span>
@@ -174,16 +354,17 @@
       <footer id="contact" class="footer">
         <address class="contact">
           <div class="info">
-            <a class="link linkedin-link" target="_blank" href="https://www.linkedin.com/in/pedro-henrique-gregorio/"><img class="social-media-icon" src="./icons/github.svg" alt="Github icone"></a>
-            <a class="link github-link" target="_blank" href="https://github.com/Pedrogregorio/"><img class="social-media-icon" src="./icons/linkedin.svg" alt="Linkedin Icone"></a>
-            <a class="link email-link" target="_blank" href="mailto:pedrogregoriodias675@gmail.com"><img class="social-media-icon" src="./icons/email.svg" alt="Email Icone"></a>
-            <a class="link tel-link" target="_blank" href="tel:+5567999294137"><img class="social-media-icon" src="./icons/tel.svg" alt="Whatsapp Icone"></a>
+            <a class="link linkedin-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pedro-henrique-gregorio/" aria-label="Perfil no LinkedIn"><img class="social-media-icon" src="./icons/github.svg" alt="Github icone" width="30" height="30"></a>
+            <a class="link github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/Pedrogregorio/" aria-label="Perfil no GitHub"><img class="social-media-icon" src="./icons/linkedin.svg" alt="Linkedin Icone" width="30" height="30"></a>
+            <a class="link email-link" target="_blank" rel="noopener noreferrer" href="mailto:pedrogregoriodias675@gmail.com" aria-label="Enviar email"><img class="social-media-icon" src="./icons/email.svg" alt="Email Icone" width="30" height="30"></a>
+            <a class="link tel-link" target="_blank" rel="noopener noreferrer" href="tel:+5567999294137" aria-label="Enviar mensagem no WhatsApp"><img class="social-media-icon" src="./icons/tel.svg" alt="Whatsapp Icone" width="30" height="30"></a>
           </div>
-          <p class="copyright"> Pedro Gregorio © 2025 </p>
+          <p class="copyright"> Pedro Gregorio © 2024 </p>
         </address>
       </footer>
     </main>
 
     <script src="./js/navigation.js"></script>
+    <script src="./js/animations.js"></script>
   </body>
 </html>

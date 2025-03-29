@@ -2,12 +2,21 @@
   height: 100%;
   align-items: flex-start;
   padding-top: 2rem;
+  overflow: hidden;
 
   .base-limitator {
     .title {
       font-size: 2.2rem;
       font-weight: 400;
       line-height: 6rem;
+      opacity: 0;
+      transform: translateY(-50px);
+      transition: opacity 1s ease, transform 1s ease;
+
+      &.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .projects-container {
@@ -17,6 +26,14 @@
 
       .project-link {
         text-decoration: none;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease, transform 1s ease;
+
+        &.animate {
+          opacity: 1;
+          transform: translateY(0);
+        }
 
         .project-card {
           display: flex;
