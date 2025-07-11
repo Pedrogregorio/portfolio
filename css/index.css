@@ -16,28 +16,50 @@ html {
 
 
 :root {
-  --primary-color: #FF6464;
-  --secondary-color: #00A8CC;
-  --dark-color: #21243D;
-  --ligth-color: #8695A4;
+  /* Core Professional Colors */
+  --primary-color: #2563EB;  /* Professional blue */
+  --secondary-color: #059669;  /* Professional green */
+  --dark-color: #1F2937;  /* Rich dark gray */
+  --light-color: #6B7280;  /* Medium gray */
 
-  --secondary-background-color: #EDF7FA;
+  /* Background Colors */
+  --secondary-background-color: #F8FAFC;  /* Light gray background */
+  --card-background: #FFFFFF;  /* Card background */
+  --hover-background: #F1F5F9;  /* Hover state */
 
-  --text-color: #000;
-  --white-color: #fff;
+  /* Text Colors */
+  --text-color: #1F2937;  /* Dark text for better contrast */
+  --text-secondary: #6B7280;  /* Secondary text */
+  --text-muted: #9CA3AF;  /* Muted text */
+  --white-color: #FFFFFF;
 
-  --javascript-color: #ecb725;
-  --ruby-on-rails-color: #cc0000;
-  --git-color: #f05033;
-  --vue-color: #41b883;
-  --node-color: #3f893b;
+  /* Status Colors */
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+  --error-color: #EF4444;
+  --info-color: #3B82F6;
+
+  /* Technology Colors (maintained but refined) */
+  --javascript-color: #F7DF1E;
+  --ruby-on-rails-color: #CC0000;
+  --git-color: #F05033;
+  --vue-color: #4FC08D;
+  --node-color: #339933;
   --aws-color: #FF9900;
-  --mysql-color: #005376;
+  --mysql-color: #4479A1;
   --php-color: #777BB3;
-  --html-color: #ff5733;
-  --css-color: #264de4;
+  --html-color: #E34F26;
+  --css-color: #1572B6;
 
-  /* breackpoint */
+  /* Accessibility Colors */
+  --focus-color: #2563EB;
+  --focus-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+
+  /* Gradient Colors */
+  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  --gradient-secondary: linear-gradient(135deg, #059669 0%, #047857 100%);
+
+  /* Breakpoints */
   --sm: 480px;
   --md: 1074px;
   --lg: 1440px;

@@ -1,19 +1,36 @@
 .skills {
   height: 100%;
-  background-color: var(--white-color);
+  background-color: var(--secondary-background-color);
   align-items: flex-start;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   overflow: hidden;
 
   .base-limitator {
     .title {
       font-size: 2.2rem;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 6rem;
       color: var(--dark-color);
       opacity: 0;
       transform: translateY(-50px);
       transition: opacity 1s ease, transform 1s ease;
+      margin-bottom: 1rem;
+
+      &.animate {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .skills-description {
+      font-size: 1.6rem;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(-30px);
+      transition: opacity 1s ease, transform 1s ease;
+      transition-delay: 0.2s;
+      text-align: center;
 
       &.animate {
         opacity: 1;
@@ -53,14 +70,23 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
-            padding: 2rem;
-            background-color: var(--secondary-background-color);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
+            gap: 1.5rem;
+            padding: 2.5rem;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(229, 231, 235, 0.8);
 
             &:hover {
               transform: translateY(-5px);
+              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.06);
+              border-color: var(--primary-color);
+            }
+
+            &:focus-within {
+              outline: 2px solid var(--focus-color);
+              outline-offset: 2px;
             }
 
             img {
@@ -72,21 +98,38 @@
             span {
               font-size: 1.6rem;
               color: var(--dark-color);
-              font-weight: 500;
+              font-weight: 600;
+              text-align: center;
             }
 
             .skill-level {
               width: 100%;
-              height: 0.8rem;
-              background-color: #E0E0E0;
-              border-radius: 4px;
+              height: 1rem;
+              background-color: #E5E7EB;
+              border-radius: 8px;
               overflow: hidden;
+              position: relative;
 
               .progress {
                 height: 100%;
-                background-color: var(--primary-color);
-                border-radius: 4px;
-                transition: width 1s ease;
+                background: var(--gradient-primary);
+                border-radius: 8px;
+                transition: width 1.5s ease;
+                position: relative;
+
+                &::after {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 0.2) 0%,
+                    rgba(255, 255, 255, 0.1) 50%,
+                    rgba(255, 255, 255, 0.2) 100%);
+                  border-radius: 8px;
+                }
               }
             }
           }

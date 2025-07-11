@@ -28,6 +28,10 @@ const initAnimations = () => {
   const titles = document.querySelectorAll('.base-section .title');
   createObserver(titles, 'animate');
 
+  // Descrição das habilidades
+  const skillsDescription = document.querySelectorAll('.skills-description');
+  createObserver(skillsDescription, 'animate');
+
   // Cards de jobs
   const jobCards = document.querySelectorAll('.job-card');
   createObserver(jobCards, 'animate');
