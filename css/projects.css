@@ -28,9 +28,16 @@
 
       .project-link {
         text-decoration: none;
+        color: inherit;
+        display: block;
         opacity: 0;
         transform: translateY(50px);
         transition: opacity 1s ease, transform 1s ease;
+
+        &:hover {
+          text-decoration: none;
+          color: inherit;
+        }
 
         &.animate {
           opacity: 1;
@@ -39,16 +46,16 @@
 
         .project-card {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           gap: 3rem;
           position: relative;
-          align-items: stretch;
-          padding: 2rem;
+          padding: 2.5rem;
           background-color: var(--card-background);
           border-radius: 16px;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
           transition: all 0.3s ease;
           border: 1px solid rgba(229, 231, 235, 0.8);
+          width: 100%;
 
           &:hover {
             transform: translateY(-5px);
@@ -67,6 +74,7 @@
             height: 16rem;
             object-fit: cover;
             border-radius: 10px;
+            flex-shrink: 0;
           }
 
           .project-info {
@@ -75,6 +83,8 @@
             align-items: flex-start;
             justify-content: flex-start;
             gap: 4px;
+            flex: 1;
+            width: 100%;
 
             .project-title {
               font-size: 2.4rem;
