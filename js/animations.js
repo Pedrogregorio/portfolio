@@ -46,34 +46,7 @@ const initAnimations = () => {
 
   // Animações para a seção de habilidades
   const skillsCategories = document.querySelectorAll('.skills-category');
-  const skillItems = document.querySelectorAll('.skill-item');
-
-  const animateSkills = (entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
-
-        // Anima a barra de progresso
-        if (entry.target.classList.contains('skill-item')) {
-          const progressBar = entry.target.querySelector('.progress');
-          const level = entry.target.dataset.level;
-          progressBar.style.width = `${level}%`;
-        }
-      }
-    });
-  };
-
-  const skillsObserver = new IntersectionObserver(animateSkills, {
-    threshold: 0.1
-  });
-
-  skillsCategories.forEach(category => {
-    skillsObserver.observe(category);
-  });
-
-  skillItems.forEach(item => {
-    skillsObserver.observe(item);
-  });
+  createObserver(skillsCategories, 'animate');
 };
 
 // Inicializa as animações quando o DOM estiver carregado
