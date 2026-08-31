@@ -251,88 +251,112 @@
 
       <section id="projects" class="base-section projects" aria-labelledby="projects-title">
         <div class="base-limitator">
-          <h2 id="projects-title" class="title">Projetos</h2>
+          <div class="projects-header">
+            <h2 id="projects-title" class="title">Projetos</h2>
+            <div class="carousel-controls">
+              <button type="button" class="carousel-btn carousel-prev" aria-label="Projeto anterior">
+                <span aria-hidden="true">&#10094;</span>
+              </button>
+              <button type="button" class="carousel-btn carousel-next" aria-label="Próximo projeto">
+                <span aria-hidden="true">&#10095;</span>
+              </button>
+            </div>
+          </div>
 
-          <div class="projects-container">
-            <a class="project-link" href="https://apertaesolta.com.br/app-web-sales" target="_blank" rel="noopener noreferrer" aria-label="Visitar A&S - Aperta e Solta">
-              <article class="project-card">
-                <img loading="lazy" class="project-image" src="images/projects/aperta_e_solta.png" alt="A&S - Aperta e Solta - Aplicativo de pompoarismo" width="280" height="160">
-                <div class="project-info">
-                  <h3 class="project-title">A&S - Aperta e Solta</h3>
+          <div class="projects-carousel" data-autoplay="true">
+            <div class="carousel-viewport">
+              <div class="carousel-track projects-container">
+                <a class="project-link" href="https://apertaesolta.com.br/app-web-sales" target="_blank" rel="noopener noreferrer" aria-label="Visitar A&S - Aperta e Solta">
+                  <article class="project-card">
+                    <div class="project-image-wrap">
+                      <img loading="lazy" class="project-image" src="images/projects/aperta_e_solta.png" alt="A&S - Aperta e Solta - Aplicativo de pompoarismo" width="280" height="160">
+                    </div>
+                    <div class="project-info">
+                      <h3 class="project-title">A&S - Aperta e Solta</h3>
 
-                  <div class="project-tools">
-                    <span class="stack-chip ruby-on-rails">Ruby on Rails</span>
-                    <span class="stack-chip mysql">MySQL</span>
-                    <span class="stack-chip javascript">JS</span>
-                  </div>
+                      <div class="project-tools">
+                        <span class="stack-chip ruby-on-rails">Ruby on Rails</span>
+                        <span class="stack-chip mysql">MySQL</span>
+                        <span class="stack-chip javascript">JS</span>
+                      </div>
 
-                  <p class="project-description">
-                    Aplicativo de pompoarismo do curso da Catia Damaceno. Responsável pelo desenvolvimento completo da API e infraestrutura,
-                    garantindo alta disponibilidade e performance da aplicação mobile.
-                  </p>
-                </div>
-              </article>
-            </a>
+                      <p class="project-description">
+                        Aplicativo de pompoarismo do curso da Catia Damaceno. Responsável pelo desenvolvimento completo da API e infraestrutura,
+                        garantindo alta disponibilidade e performance da aplicação mobile.
+                      </p>
+                    </div>
+                  </article>
+                </a>
 
-            <a class="project-link" href="https://www.biofaces.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Biofaces">
-              <article class="project-card">
-                <img loading="lazy" class="project-image" src="images/projects/biofaces.png" alt="Biofaces - Rede social PHP" width="280" height="160">
-                <div class="project-info">
-                  <h3 class="project-title">Biofaces</h3>
+                <a class="project-link" href="https://www.biofaces.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Biofaces">
+                  <article class="project-card">
+                    <div class="project-image-wrap">
+                      <img loading="lazy" class="project-image" src="images/projects/biofaces.png" alt="Biofaces - Rede social PHP" width="280" height="160">
+                    </div>
+                    <div class="project-info">
+                      <h3 class="project-title">Biofaces</h3>
 
-                  <div class="project-tools">
-                    <span class="stack-chip php">PHP</span>
-                    <span class="stack-chip mysql">MySQL</span>
-                  </div>
+                      <div class="project-tools">
+                        <span class="stack-chip php">PHP</span>
+                        <span class="stack-chip mysql">MySQL</span>
+                      </div>
 
-                  <p class="project-description">
-                    Rede social desenvolvida em PHP para compartilhamento de fotos de animais na
-                    natureza. Atuo na manutenção e evolução contínua da plataforma.
-                  </p>
-                </div>
-              </article>
-            </a>
+                      <p class="project-description">
+                        Rede social desenvolvida em PHP para compartilhamento de fotos de animais na
+                        natureza. Atuo na manutenção e evolução contínua da plataforma.
+                      </p>
+                    </div>
+                  </article>
+                </a>
 
-            <a class="project-link" href="https://recmais.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Rec+">
-              <article class="project-card">
-                <img loading="lazy" class="project-image" src="images/projects/rec_mais.png" alt="Rec+ - Plataforma de créditos de carbono" width="280" height="160">
-                <div class="project-info">
-                  <h3 class="project-title">Rec+</h3>
+                <a class="project-link" href="https://recmais.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Rec+">
+                  <article class="project-card">
+                    <div class="project-image-wrap">
+                      <img loading="lazy" class="project-image" src="images/projects/rec_mais.png" alt="Rec+ - Plataforma de créditos de carbono" width="280" height="160">
+                    </div>
+                    <div class="project-info">
+                      <h3 class="project-title">Rec+</h3>
 
-                  <div class="project-tools">
-                    <span class="stack-chip ruby-on-rails">Ruby on Rails</span>
-                    <span class="stack-chip mysql">MySQL</span>
-                    <span class="stack-chip javascript">JS</span>
-                    <span class="stack-chip vue">Vue.js</span>
-                  </div>
+                      <div class="project-tools">
+                        <span class="stack-chip ruby-on-rails">Ruby on Rails</span>
+                        <span class="stack-chip mysql">MySQL</span>
+                        <span class="stack-chip javascript">JS</span>
+                        <span class="stack-chip vue">Vue.js</span>
+                      </div>
 
-                  <p class="project-description">
-                    Plataforma para comercialização de créditos de carbono gerados por meio da logística reversa de resíduos.
-                    Responsável pela infraestrutura, API e frontend da aplicação, garantindo sustentabilidade e eficiência.
-                  </p>
-                </div>
-              </article>
-            </a>
+                      <p class="project-description">
+                        Plataforma para comercialização de créditos de carbono gerados por meio da logística reversa de resíduos.
+                        Responsável pela infraestrutura, API e frontend da aplicação, garantindo sustentabilidade e eficiência.
+                      </p>
+                    </div>
+                  </article>
+                </a>
 
-            <a class="project-link" href="https://duasvidas.app.br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Duas Vidas">
-              <article class="project-card">
-                <img loading="lazy" class="project-image" src="images/projects/duas_vidas.png" alt="Duas Vidas - Plataforma de controle pré-natal" width="280" height="160">
-                <div class="project-info">
-                  <h3 class="project-title">Duas Vidas</h3>
+                <a class="project-link" href="https://duasvidas.app.br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Duas Vidas">
+                  <article class="project-card">
+                    <div class="project-image-wrap">
+                      <img loading="lazy" class="project-image" src="images/projects/duas_vidas.png" alt="Duas Vidas - Plataforma de controle pré-natal" width="280" height="160">
+                    </div>
+                    <div class="project-info">
+                      <h3 class="project-title">Duas Vidas</h3>
 
-                  <div class="project-tools">
-                    <span class="stack-chip php">PHP</span>
-                    <span class="stack-chip javascript">JS</span>
-                    <span class="stack-chip mysql">MySQL</span>
-                  </div>
+                      <div class="project-tools">
+                        <span class="stack-chip php">PHP</span>
+                        <span class="stack-chip javascript">JS</span>
+                        <span class="stack-chip mysql">MySQL</span>
+                      </div>
 
-                  <p class="project-description">
-                    Plataforma para apoio ao acompanhamento pré-natal. Atuação no desenvolvimento da
-                    API com PHP e Laravel, com foco em segurança e confiabilidade de dados sensíveis.
-                  </p>
-                </div>
-              </article>
-            </a>
+                      <p class="project-description">
+                        Plataforma para apoio ao acompanhamento pré-natal. Atuação no desenvolvimento da
+                        API com PHP e Laravel, com foco em segurança e confiabilidade de dados sensíveis.
+                      </p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+
+            <div class="carousel-dots" role="tablist" aria-label="Navegação dos projetos"></div>
           </div>
         </div>
       </section>
@@ -352,6 +376,7 @@
 
     <script src="./js/navigation.js"></script>
     <script src="./js/animations.js"></script>
+    <script src="./js/projects-carousel.js"></script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",

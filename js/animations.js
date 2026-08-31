@@ -40,9 +40,9 @@ const initAnimations = () => {
   const academicCards = document.querySelectorAll('.academic-card');
   createObserver(academicCards, 'animate');
 
-  // Cards de projetos
-  const projectLinks = document.querySelectorAll('.project-link');
-  createObserver(projectLinks, 'animate');
+  // Cards de projetos / carrossel
+  const projectsCarousel = document.querySelectorAll('.projects-carousel, .carousel-controls');
+  createObserver(projectsCarousel, 'animate');
 
   // Animações para a seção de habilidades
   const skillsCategories = document.querySelectorAll('.skills-category');
